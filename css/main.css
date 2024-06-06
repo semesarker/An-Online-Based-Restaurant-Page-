@@ -1,0 +1,967 @@
+.info{
+	background: #000;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+
+body{
+	font-family: 'Port Lligat Sans', sans-serif!important;
+    /* font-family: 'Yellowtail', cursive!important; */
+	color: #000;
+	background: url('../pic/baggy.JPG')center/cover fixed no-repeat;
+}
+
+.cover{
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	background: #e79702;
+}
+.phone{
+	z-index: 1;
+	font-weight: 200;
+}
+.phone i{
+	color: #000;
+}
+.phone a{
+     color: #000;
+     font-size: 13px;
+     font-weight: bold;
+}
+.height-10{
+	height: 40px;
+}
+.phone-icon{
+	width: 40px;
+}
+
+.reg{
+	width: 100%;
+	text-align: right;
+}
+.reg a{
+	color: #000;
+	text-transform: uppercase;
+	font-size: 13px;
+     font-weight: bold;
+     text-align: right;
+}
+.social-icon{
+	display: inline-block;
+	width: 50%;
+}
+.social-icon p{
+	display: block;
+	width: 100%;
+}
+.social-icon p a{
+	height: 30px;
+	margin-right: 10px;
+}
+.social-icon p a i{ 
+	font-size: 13px;
+	color: #000;
+}
+.social-icon p a:hover{
+   background: #f8aa02;
+   border-color: #f8aa02; 
+}
+.social-icon p a:hover i{
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.primary-color{
+	color: #fe9801;
+}
+.primary-color:hover{
+	color: #d3325f!important;
+
+}
+.info h2{
+	word-spacing: 0.6rem;
+}
+.info a{
+	transition: color 0.5s ease-in-out;
+}
+.info a:hover{
+	color: #d3325f;
+}
+/*-------- header----*/       
+#header{
+	min-height: calc(100vh - 94px);
+	/* background: url('https://cdn.shopify.com/s/files/1/0053/6487/5375/files/Capture_e742479e-e29c-4353-9f83-60582d6b73e3.png?v=1610662202'); */
+	/* background: url('https://media.istockphoto.com/photos/wood-texture-table-top-with-blur-light-gold-bokeh-in-caferestaurant-picture-id1129661826?k=6&m=1129661826&s=612x612&w=0&h=nXi5KiVY7liQFbQbW4ijK-j2lubQBmtzST0yHZZXxjQ='); */
+	background: url('https://www.teahub.io/photos/full/253-2538486_slider3-restaurant-food-pic-hd.jpg');
+	/* background: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-summer-atmosphere-restaurant-supermarket-vegetable-psd-layered-promotion-background-image_159939.jpg'); */
+	/* background: url('https://www.desktopbackground.org/download/1680x1050/2015/10/11/1024795_page-2-full-hd-1080p-restaurant-wallpapers-hd-desktop_1920x1080_h.jpg'); */
+	/* background: url('../image/Background.jpg'); */
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat; 
+	position: relative;
+}
+.height-90{
+	min-height: calc(100vh - 94px);
+}
+
+.banner h1{
+	animation: fromLeft;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft{
+	0%{
+      transform: translateX(-100px);
+      opacity: 0;
+	}
+	50%{
+       transform: translateX(30px);
+	}
+	100%{
+       transform: translateX(0);
+      opacity: 1;
+	}
+}
+
+
+
+.main-btn{
+	color: #000;
+	font-size: 2rem;
+	background: #fe9801;;
+	transition: all 0.5s ease-in-out; 
+}
+.main-btn:hover{
+	color: #fff;
+	border: 2px solid #fe9801;
+    background: #fe9801;
+}
+.sushi-btn{
+   animation: fromRight;
+   animation-duration: 4s;
+	animation-delay: 2s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes fromRight{
+	0%{
+      transform: translateX(100px);
+      opacity: 0;
+	}
+	50%{
+       transform: translateX(-30px);
+	}
+	100%{
+       transform: translateX(0);
+      opacity: 1;
+	}
+}
+
+.header-link{
+	display: inline-block;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	background: #c9c1ac;
+	border-radius: 10px;
+	transition: all 0.5s ease;
+	animation: fromBottom;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+.header-link{
+	color: #242424;
+}
+
+
+@keyframes fromBottom{
+	0%{
+      transform: translateY(-10px);
+  
+	}
+	50%{
+       transform: translateY(10px);
+	}
+	100%{
+       transform: translateY(-10px);
+      
+	}
+}
+
+/*--------end of header----*/
+/*--- navbar ----*/
+*{ 
+  margin:0;
+  padding: 0;
+}
+
+#myNavbar{
+  text-align: center;
+}
+#myNavbar ul{
+  display: inline-flex;
+  list-style: none;
+   color: #f8aa02;
+  
+}
+#myNavbar ul li{
+  width: 120px;
+  margin: 10px;
+  padding: 2px;
+}
+#myNavbar ul li a{
+  text-decoration: none;
+    color: #f8aa02;
+}
+.nav-link:hover{
+  color: #d3325f!important;
+}
+.nav-link .fas{
+  margin-left: 8px;
+}
+.fa-caret-down{
+  float: right;
+}
+
+.hover-me .fa-angle-right{
+	font-size: 15px;
+  float: right;
+ 
+}
+.sub-menu-1{
+  display: none;
+}
+#myNavbar ul li:hover .sub-menu-1{
+  display: block;
+  position: absolute;
+  background: #0f0f0ffb;
+  margin-top: 5px;
+  margin-bottom: -5px;
+  color: #d3325f;
+}
+#myNavbar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+#myNavbar ul li:hover .sub-menu-1 ul li{
+  width: 90px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+#myNavbar ul li:hover .sub-menu-1 ul li:last-child{
+  border-bottom: none;
+}
+#myNavbar ul li:hover .sub-menu-1 ul li a:hover{
+  color: #d3325f;
+}
+.sub-menu-2{
+  display: none;
+}
+.sub-menu-3{
+  display: none;
+}
+.hover-me:hover .sub-menu-2{
+   position: absolute;
+   display: block;
+   margin-top: 10px;
+   margin-left: 50px;
+   background: rgba(0,0,0,0.9);
+ }
+.hill-me:hover .sub-menu-3{
+   position: absolute;
+   display: block;
+   margin-top: 10px;
+   margin-left: 50px;
+   background: rgba(0,0,0,0.9);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar{
+	background: #000;
+	padding: 30px 20px;
+	transition: all 0.5s ease;
+}
+.navbar-background{
+  padding: 1px 20px;
+}
+.navbar-brand{
+	font-size: 30px;
+	transition: all 0.5s ease; 
+}
+.navbar-brand:hover{
+	color: #242424;
+}
+.nav-link{
+	color: #242424;
+	text-decoration: none;
+	transition: all 0.5s ease; 
+	font-size: 23px;
+	color: #fe9801;
+
+}
+.nav-link:hover{
+	color: #d3325f!important;
+}
+.nav-btn{
+	background: transparent;
+	color: #fe9801;
+	border: 2px solid #fe9801;
+	font-size: 23px;
+    transition: all 0.5s ease;
+}
+.nav-btn:hover{
+   color: #d3325f;
+   border: 2px solid #d3325f;
+   transform: rotate(10deg);
+}
+.toggler-btn{
+   border: 2px solid #fe9801;
+   padding: 5px;
+   transition: all 0.5s ease;
+}
+.bar{
+	width: 30px;
+	height: 3px;
+	margin: 5px;
+	background: #fe9801;
+	transition: all 0.5s ease;
+}
+.change .bar1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+ .change .bar2{
+	opacity: 0;
+}
+
+.change .bar3{
+	transform: rotate(45deg) translate(-5px,-8px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  MENU ITEM  */
+.item-container{
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(rgb(0,0,0),rgb(0,0,0));
+	transition: all 2s ease;
+}
+.item-img{
+	transition: all 2s ease;
+}
+.item-container:hover .item-img{
+	transform: scale(1.2);
+	opacity: 0.8;
+} 
+.item-link{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #d3325f;
+	font-size: 2rem;
+	border-top: 3px solid #d3325f;
+	border-bottom: 3px solid #d3325f;
+	transition: all 2s ease;
+	opacity: 0;
+}
+.item-container:hover .item-link{
+	opacity: 1;
+}
+.item-link:hover{
+	/*color: #c9c1ac;*/
+	border: 3px solid  #c9c1ac;
+    background:  #c9c1ac;
+    color: #242424;
+}
+
+.item-container:hover{
+	outline: 10px solid #d3325f;
+	outline-offset: 0.8rem;
+}
+/*--------end of menu item----*/
+
+
+
+
+
+
+/*number*/
+
+.number{
+	text-align: center;
+	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),
+	url('https://i.pinimg.com/736x/16/a7/13/16a713af541daf0345ed6cfde516128f.jpg')center/cover no-repeat fixed;
+	padding: 30px 0;
+	color: #fff;
+}
+.number i{
+	color: #fff;
+}
+.number i:hover{
+	color: orange;
+}
+
+.number p{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+
+.number:hover{
+	color: orange;
+}
+.number .fas{
+	font-size: 50px;
+	margin: 20px 0;
+}
+
+.number h3{
+	text-transform: uppercase;
+}
+@media screen and (min-width: 576px){
+	#numbers{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 576px){
+	#numbers{
+	
+		grid-template-columns: repeat(5,1fr);
+	}
+}
+
+
+/*number*/
+
+
+
+ 
+
+/*-------- menu----*/
+/*#menu{
+	background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url('../image/Background.jpg')center/cover fixed no-repeat;
+}
+.special{
+	border: 3px solid #d3325f;
+	position: relative;
+}
+.special-text{
+   position: absolute;
+  top: 0;
+  right: 10%;
+  background: #d3325f;
+  padding: 0 0.4rem;
+}*/
+
+/*--------end of menu----*/ 
+
+
+
+
+/*  product section  */
+.title-text{
+	font-size: 30px;
+	text-align: center;
+	color: #fe9801;
+}
+
+#food{
+	padding: 20px;
+	background: #000;
+}
+.food-container{
+	max-width: 90vw;
+	margin: 0 auto;
+}
+.food-card{
+	position: relative;
+	background: linear-gradient(rgba(205,96,0,0.7),rgba(205,96,0,0.7));
+	margin: 20px 0;
+	color: #000;
+	overflow: hidden;
+	padding: 3px;
+	border-radius: 16px;
+	border: 1px solid orange;
+	box-shadow: 2px 3px 1px 1px #cd6100;
+
+}
+
+#food img{
+	width: 100%;
+	min-height: 100%;
+	display: block;
+	transition: transform 4s;
+}
+.img-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	opacity: 0;
+	transition: opacity 4s;
+}
+.img-footer{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   padding: 10px;
+   font-size: 20px;
+   opacity: 0;
+   color: #000;
+   	transition: opacity 4s;
+}
+.img-text h1{
+	font-size: 30px;
+	margin-bottom: 10px;
+
+}
+.food-card:hover img{
+	  opacity: 0.4;
+	  transform: scale(1.3);
+
+}
+
+.food-card:hover .img-text,
+.food-card:hover .img-footer{
+	opacity: 1;
+}
+.food-btn{
+	display: inline-block;
+	background: #000;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 12px 32px;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 180px;
+	cursor: pointer;
+	margin-top: 16px;
+	transition: all 0.3s ease-in-out;
+    font-size: 18px;
+	outline: none;
+}
+.food-btn:hover{
+	color: orange;
+	background: #fff;
+	border: #000;
+	outline: none;
+}
+
+
+
+
+.fas{
+	font-size: 30px;
+} 
+@media screen and (min-width: 576px){
+	.food-container{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-column-gap: 16px; 
+	}
+}
+
+@media screen and (min-width: 992px){
+	.food-container{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-column-gap: 16px; 
+	}
+}
+
+
+
+.btn-prod{
+	display: inline-block;
+	vertical-align: middle; 
+	color: #fe9801!important;
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgb(236,117,5);
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+	padding: 5px 100px;
+}
+.btn-prod:before{
+	content: ""; 
+	position: absolute;
+	z-index: -1;
+	left: 51%;
+	right: 51%;
+	top: 0;
+	background: #fe9801;
+	height: 4px;
+	transition-property: left,right;
+	transition-duration: 0.3s;
+	transition-timing-function: ease
+}
+.btn-prod:hover:before,.btn-prod:focus:before,
+.btn-prod:active:before{
+	left: 0;
+	right: 0;
+}
+/*end of  product section  */
+
+
+/*  subscription section  */
+#subscribe{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+		url('https://www.desktopbackground.org/download/1680x1050/2015/10/11/1024795_page-2-full-hd-1080p-restaurant-wallpapers-hd-desktop_1920x1080_h.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+        clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+}
+#subscribe h4{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#subscribe .form-control{
+	
+	font-size: 20px;
+}
+#subscribe .form-btn{
+	font-size: 20px;
+	background: #e79702;
+	border: 3px solid #fe9801;
+}
+/* end of subscription section  */
+
+/* start of blog section  */
+.pi-color{
+	color: #fe9801;
+}
+.blog-start{
+	overflow: hidden;
+	width: 100%;
+	z-index: 0;
+	position: relative;
+}
+@media (min-width: 768px){
+	.blog-start{
+		margin-bottom: 30px;
+	}
+}
+.blog-start .img, .blog-start .text{
+	width: 50%; 
+}
+@media (max-width: 992px){
+   .blog-start .img, .blog-start .text{
+	width: 100%; 
+}
+}
+@media (max-width: 768px){
+	.blog-start .img{
+		height: 300px;
+	}
+}
+.blog-start .text{
+	position: relative;
+	margin: 0 auto;
+	z-index: 0;
+}
+.blog-start .text .heading{
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 0;
+    font-style: italic;
+}
+.blog-start .text .heading a{
+	color: #000;
+}
+.blog-start .text .heading a:hover,
+.blog-start .text .heading a:focus,
+.blog-start .text .heading a:active{
+	color: #e79702;
+}
+.blog-start .des p i{
+	padding-right: 10px; 
+
+}
+.blog-start .btn-custom{
+	color: #e79702;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.blog-start .btn-custom i{
+		font-size: 12px;
+}
+/* end of blog section  */
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------ABOUT----*/
+.about-main{
+    position: relative;
+}
+.about-under{
+    position: absolute;
+    /* bottom: 40%; */
+    left: 10%;
+}
+.about-pictures{
+	position: relative;
+}
+.about-image{
+	position: absolute;
+	width: 150px;
+	transition: all 2s ease;
+	opacity: 0.9;
+}
+.img-1{
+	left: 0%;
+	top: 0%;
+}
+.img-2{
+	left: 20%;
+	top: 20%;
+	z-index: 10;
+}
+.img-3{
+	left: 40%;
+	top: 45%;
+	/* z-index: 20; */
+}
+.img-4{
+	left: 40%;
+	top: 0%;
+	
+}
+.img-5{
+	left: 0%;
+	top: 45%;
+	
+}
+.about-image:hover{
+	outline: 10px solid #d3325f;
+	outline-offset: 0.8rem;
+	transform: scale(1.3) rotate(20deg);
+	z-index: 30;
+	opacity: 1;
+}
+.about-pictures:hover .about-image:not(:hover){
+	opacity: 0.5;
+}
+
+
+
+
+
+.moreText-about{
+	display: none;
+}
+.text-about.show-more-about .moreText-about{
+	display: inline;
+}
+
+
+
+
+
+
+/*--------end of ABOUT----*/ 
+/*--------review----*/
+.review-img{
+	width: 150px;
+}
+.review-item{
+	background: rgba(255,255,255,0.7);
+	clip-path: polygon(5% 0,100% 0,95% 100%,0 100%);
+}
+/*--------end of review----*/  
+/*--------team----*/
+.team-icons a{
+	color: #3b5998;
+	transition: all 0.5s ease-in-out;
+}
+
+.team-icons a:hover{
+	color: #242424;
+	transform: translateY(-5px);
+}
+/*--------end of team----*/
+/*--------contact section----*/
+.height-60{
+	min-height: 67vh;
+}
+#contact .card{
+	background: rgba(0,0,0,0.5);
+	transition: all 0.5s ease;
+}
+#contact .card:hover{
+	background: rgba(0,0,0,0.8);
+}
+#contact .card-header{
+	color: #fe9801;;
+}
+
+#contact .input-group-text{
+	background: #fe9801;;
+	border-color: #fe9801;;
+	color: #242424; 
+}
+#contact .card input{
+	color: #606060;
+}
+#contact .card input::placeholder{
+	color: #606060;
+}
+.contact-btn{
+	color: #fe9801;;
+	border-color: #fe9801;;
+	background: transparent;
+	transition: all 0.5s ease-in-out; 
+}
+.contact-btn:hover{
+	border-color: #fe9801;;
+	border-color: #c9c1ac;
+	background: #fe9801;
+
+}
+/*--------end of contact section----*/    
+/*--------footer ----*/
+#back-to-top{
+		background: #c9c1ac;
+		border-radius: 10px;
+		display: inline-block;
+}
+.scrollTop{
+	position: fixed;
+	bottom: 70px;
+	right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------end of footer ----*/
+
+/* order-section */
+.heading-order{
+color: #fe9801;
+}
+.order .row{
+display: flex;
+background: #c9c1ac;
+margin: 1rem 2rem;
+overflow: hidden;
+box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+}
+
+.order .row .img-order{
+flex: 1 1 40%;
+}
+
+.order .row .img-order img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.order .row form{
+flex: 1 1 60%;
+background: #fff;
+padding: 30px;
+
+}
+
+.order .row form .box{
+padding: 10px 20px;
+margin: 10px;
+font-size: 1.5rem;
+color: #606060;
+text-transform: none;
+background: #f0f0f0;
+width: 100%;
+border: none;
+}
+
+.order .row form .address{
+resize: none;
+height: 50px;
+}
